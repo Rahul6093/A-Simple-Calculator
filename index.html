@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="calculator">
+        <section class="workspace">
+            <input class="display" readonly type="text" placeholder="0">
+            <input class="display-output"  readonly type="text" >
+        </section>
+        <hr></hr>
+        <section class="buttons">
+            <button class="alt" onclick="clearAll()">AC</button>
+            <button class="alt" onclick="del()">DEL</button>
+            <button onclick="appendDisplay('/')" class="alt">/</button>
+            <button onclick="appendDisplay('%')" class="alt">%</button>
+            
+            <button onclick="appendDisplay('7')">7</button>
+            <button onclick="appendDisplay('8')">8</button>
+            <button onclick="appendDisplay('9')">9</button>
+            <button onclick="appendDisplay('*')" class="alt">x</button>
+            
+            <button onclick="appendDisplay('4')">4</button>
+            <button onclick="appendDisplay('5')">5</button>
+            <button onclick="appendDisplay('6')">6</button>
+            <button onclick="appendDisplay('-')" class="alt">-</button>
+            
+            <button onclick="appendDisplay('1')">1</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button onclick="appendDisplay('+')" class="alt">+</button>
+            
+            <button onclick="inversewhole()">+/-</button>
+            <button onclick="appendDisplay('0')">0</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button onclick="evaluation()" class="alt">=</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
